@@ -28,7 +28,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding-top: 28vh;
+            padding-top: 10vh;
             color: white;
         }
 
@@ -53,10 +53,31 @@
     </head>
     <body>
         <header id="headerimage">
-            <div class="col-md-8 offset-md-2 p-3">
-                <h1 class="display-2 pt-5">Contact Us</h1>
+            <div class="container py-3"> <!-- Reduced padding from py-5 to py-3 -->
+                <div class="d-flex justify-content-between align-items-center mb-3"> <!-- Adjusted mb-4 to mb-3 -->
+                    <div class="d-flex align-items-center">
+                        <img src="./icons/search-white.svg" alt="Logo" class="me-2" style="width: 30px; height: 30px;">
+                        <input type="text" class="form-control form-control-sm border-0 bg-transparent text-white" 
+                            placeholder="Search" style="width: 200px;">
+                    </div>
+                    <img src="./icons/globe-white.svg" alt="Menu" class="img-fluid" style="width: 50px; height: 50px;">
+                    <div class="d-flex align-items-center">
+                        <a href="destinations.html" class="me-2 text-white text-decoration-none">Destinations</a>
+                        <a href="contact.html" class="btn btn-primary rounded-pill text-decoration-none" 
+                            style="background-color: white; color: black; border: none; outline: none;">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>    
+                <hr class="border-white">    
+                <div class="my-5"></div>
+                <div class="col-md-8 offset-md-2 p-3">
+                    <a href="home.html" class="text-white text-decoration-none fs-4 fw-bold">&larr; Back</a>
+                    <h1 class="display-2 pt-2">Contact Us</h1> <!-- Reduced pt-3 to pt-2 -->
+                </div>
             </div>
         </header>
+        
         <div class="my-5" style="height: 0px;"></div>
         <div class="container">
             <div class="col-md-8 offset-md-2 p-3" style="border: 2px solid #fec107; border-radius: 30px;">
@@ -98,10 +119,9 @@
                 <div class="row text-center">
                     <div class="col-md-6 text-md-start">
                         <h1>Links</h1>
-                        <p><a href="#" class="text-black text-decoration-none">Home</a></p>
-                        <p><a href="#" class="text-black text-decoration-none">Destinations</a></p>
-                        <p><a href="#" class="text-black text-decoration-none">About</a></p>
-                        <p><a href="#" class="text-black text-decoration-none">Contact</a></p>
+                        <p><a href="home.html" class="text-black text-decoration-none">Home</a></p>
+                        <p><a href="destinations.html" class="text-black text-decoration-none">Destinations</a></p>
+                        <p><a href="contact.html" class="text-black text-decoration-none">Contact</a></p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <h3>Newsletter</h3>
